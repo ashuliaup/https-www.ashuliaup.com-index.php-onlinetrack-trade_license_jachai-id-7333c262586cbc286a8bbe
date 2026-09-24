@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আশুলিয়া ইউনিয়ন পরিষদ - ট্রেড লাইসেন্স</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts & SolaimanLipi for standard Bengali typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://i.postimg.cc" crossorigin>
+    <link rel="dns-prefetch" href="https://i.postimg.cc">
+    <link rel="preload" as="image" href="https://i.postimg.cc/vZ8NfrjL/logo.png" fetchpriority="high">
+    <link rel="preload" as="image" href="https://i.postimg.cc/fbp2G6b1/75b70355-2d13-481e-b23b-ea5801eb3851.jpg" fetchpriority="high">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+    <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
+    <!-- Font Awesome for UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Nirmala UI', 'Kalpurush', 'SolaimanLipi', 'Noto Sans Bengali', Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #000;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .document-font {
+            font-family: 'Nirmala UI', 'Kalpurush', 'SolaimanLipi', 'Noto Sans Bengali', Arial, sans-serif;
+        }
+
+        /* Digit boxes in trade license number row */
+        .digit-box {
+            width: 24px;
+            height: 28px;
+            border: 1px solid #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 15px;
+            background-color: #fff;
+        }
+
+        /* Print Specific Styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: #fff !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            .page-container {
+                box-shadow: none !important;
+                border: none !important;
+                padding: 10mm 12mm !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+            }
+            @page {
+                size: A4 portrait;
+                margin: 10mm;
+            }
+        }
+
+        /* Editable field highlight on focus */
+        [contenteditable="true"]:focus {
+            outline: 2px dashed #2563eb;
+            background-color: #eff6ff;
+            border-radius: 2px;
+            padding: 0 2px;
+        }
+        [contenteditable="true"]:hover {
+            background-color: #f8fafc;
+            cursor: text;
+        }
+
+        .right-value-bold {
+            font-weight: 700 !important;
+            font-family: 'Nirmala UI', 'Kalpurush', 'SolaimanLipi', 'Noto Sans Bengali', sans-serif !important;
+            color: #000000 !important;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-6 flex flex-col items-center">
+
+    <!-- Trade License Main Document Container (A4 Printable Area) -->
+    <div class="page-container w-full max-w-[794px] bg-white shadow-xl border border-gray-300 p-8 sm:p-12 document-font text-black relative my-auto">
+        
+        <!-- Header Section -->
+        <div class="grid grid-cols-12 items-start mb-4 border-b border-transparent pb-2">
+            <!-- Left Logo -->
+            <div class="col-span-3 flex justify-start items-center">
+                <img src="https://i.postimg.cc/vZ8NfrjL/logo.png" 
+                     loading="eager"
+                     fetchpriority="high"
+                     decoding="async"
+                     onerror="this.src='https://placehold.co/100x100/ffffff/000000?text=LOGO'" 
+                     alt="Government Logo" 
+                     class="w-24 h-24 object-contain">
+            </div>
+
+            <!-- Center Header Info -->
+            <div class="col-span-6 text-center pt-1" style="font-family: 'Kalpurush', 'Nirmala UI', sans-serif;">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#0000ff] tracking-tight mb-0.5 leading-tight whitespace-nowrap" contenteditable="false">
+                    আশুলিয়া ইউনিয়ন পরিষদ
+                </h2>
+                <p class="text-base font-semibold text-gray-900 leading-tight" contenteditable="false">আশুলিয়া</p>
+                <p class="text-sm text-gray-800 leading-tight" contenteditable="false">সাভার, ঢাকা-১৩৪১</p>
+                <p class="text-sm text-gray-800 leading-tight" contenteditable="false">ফোন : 0, 01913958765</p>
+            </div>
+
+            <!-- Right Profile Photo -->
+            <div class="col-span-3 flex justify-end items-start pt-1">
+                <img src="https://i.postimg.cc/fbp2G6b1/75b70355-2d13-481e-b23b-ea5801eb3851.jpg" 
+                     loading="eager"
+                     fetchpriority="high"
+                     decoding="async"
+                     onerror="this.src='https://placehold.co/100x120/e2e8f0/475569?text=PHOTO'" 
+                     alt="Applicant Photo" 
+                     class="w-[90px] h-[110px] object-cover">
+            </div>
+        </div>
+
+        <!-- Main Document Title -->
+        <div class="text-center my-4">
+            <h3 class="text-lg sm:text-xl font-bold border-b-2 border-black inline-block pb-0.5 tracking-wide uppercase" style="font-family: 'Times New Roman', Times, serif;">
+                TRADE LICENSE (ট্রেড লাইসেন্স)
+            </h3>
+        </div>
+
+        <!-- Trade License Number Bar (Unified Table Grid Design) -->
+        <div class="my-4 w-full overflow-x-auto">
+            <table class="w-full border-collapse border-2 border-[#555] text-center">
+                <tbody>
+                    <tr>
+                        <td class="border border-[#555] px-3 py-1 text-sm sm:text-base font-normal whitespace-nowrap bg-white text-center">
+                            ট্রেড লাইসেন্স নং :
+                        </td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">২</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">০</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">১</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">৮</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">২</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">৬</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">১</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">৭</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">২</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">১</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">৮</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">০</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">০</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">৩</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">২</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">৭</td>
+                        <td class="border border-[#555] w-[5.5%] py-1 text-center font-bold text-sm sm:text-base bg-white">৪</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Issue Date, Serial & Validity Meta Row -->
+        <div class="flex flex-wrap justify-between items-center my-4 font-bold text-sm sm:text-base px-1">
+            <div>
+                ক্রমিক নং : <span contenteditable="false" class="editable-field right-value-bold">৩২৭৪</span>
+            </div>
+            <div>
+                ইস্যুকৃত তারিখ : <span contenteditable="false" class="editable-field right-value-bold">২০২৬-০৭-০১</span>
+            </div>
+            <div>
+                মেয়াদকাল : <span contenteditable="false" class="editable-field right-value-bold">২০২৭-০৬-৩০</span>
+            </div>
+        </div>
+
+        <!-- Detailed Information Table / Key-Value Pairs -->
+        <div class="my-5 text-sm sm:text-base leading-relaxed space-y-2">
+            
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-3 font-normal text-gray-900">মালিকের নাম</div>
+                <div class="col-span-9 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">মোঃ মেহেদী হাসান রনি</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-3 font-normal text-gray-900">পিতার নাম</div>
+                <div class="col-span-9 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">মোঃ আজব আলী গাজী</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-3 font-normal text-gray-900">মাতার নাম</div>
+                <div class="col-span-9 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">মোছাঃ তহমিনা খাতুন</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">ব্যবসা প্রতিষ্ঠানের নাম</div>
+                <div class="col-span-8 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">ডুকাটি অ্যাপারেলস লিমিটেড</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">ব্যবসা প্রতিষ্ঠানের ঠিকানা</div>
+                <div class="col-span-8 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">কাঠগড়া, , আশুলিয়া, সাভার, ঢাকা । ওয়ার্ড নং-০১</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">মোবাইল</div>
+                <div class="col-span-8 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold" style="font-family: 'Times New Roman', Times, serif !important; font-size: 1.1em;">01408093363</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">ব্যবসার ধরন</div>
+                <div class="col-span-8 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">তৈরী পোশাক রপ্তানী ও প্রস্তুতকারক।</span>
+                </div>
+            </div>
+
+            <!-- Fee Breakdown List -->
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">ট্রেড লাইসেন্স ফি(বার্ষিক)</div>
+                <div class="col-span-8 font-bold flex flex-wrap">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">২০০.০০</span>
+                    <span class="ml-4 font-bold text-black">কথায় :</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">১৫ % ভ্যাট বাবদ জমা</div>
+                <div class="col-span-8 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">৩০.০০ টাকা</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">সাইনবোর্ড কর(বার্ষিক)</div>
+                <div class="col-span-8 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">২০০০.০০ টাকা</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">পেশা ও বাণিজ্যিক কর</div>
+                <div class="col-span-8 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">৫০০০.০০ টাকা ।</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-baseline">
+                <div class="col-span-4 font-normal text-gray-900">সর্বমোট:</div>
+                <div class="col-span-8 font-bold flex">
+                    <span class="mr-2 font-bold">:</span>
+                    <span contenteditable="false" class="editable-field right-value-bold">৭২৩০ টাকা</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Declaration / Authorization Paragraph -->
+        <div class="mt-8 text-justify leading-relaxed text-sm sm:text-base font-normal">
+            <p contenteditable="false" class="editable-field">
+                লাইসেন্সধারীর নিকট হইতে সকল বকেয়া পাওনা বিবিধ রশিদ নম্বর-১০১১১৪ তাং ২০২৬-০৭-০১ এর মাধ্যমে আদায় করিয়া ২০২৬-২০২৭ অর্থসালের জন্য ইউনিয়ন পরিষদের সীমার মধ্যে বৈধ ব্যবসা করার অনুমতি দেওয়া হইল।
+            </p>
+        </div>
+
+        <!-- Extra spacing for natural document feel -->
+        <div class="h-24"></div>
+
+    </div>
+
+    <script>
+        let isEditable = false;
+
+        // Function to toggle editable mode for customized testing
+        function toggleEditable() {
+            isEditable = !isEditable;
+            const fields = document.querySelectorAll('[contenteditable]');
+            const btnText = document.getElementById('editText');
+            const editBtn = document.getElementById('editBtn');
+
+            fields.forEach(field => {
+                field.setAttribute('contenteditable', isEditable ? 'true' : 'false');
+            });
+
+            if (isEditable) {
+                btnText.innerText = 'এডিট বন্ধ করুন';
+                editBtn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+                editBtn.classList.add('bg-emerald-600', 'hover:bg-emerald-700');
+            } else {
+                btnText.innerText = 'এডিট মোড';
+                editBtn.classList.remove('bg-emerald-600', 'hover:bg-emerald-700');
+                editBtn.classList.add('bg-indigo-600', 'hover:bg-indigo-700');
+            }
+        }
+
+        // Function to reset document back to original state
+        function resetData() {
+            if (confirm('আপনি কি মূল তথ্যে ফিরে যেতে চান?')) {
+                window.location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
